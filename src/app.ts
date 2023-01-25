@@ -1,11 +1,11 @@
-import { Header } from './component/header.js';
+import { PageComponent } from './component/Page.js';
 
 class App {
-    constructor() {
-        console.log('App!');
-        new Header();
+    private readonly page: PageComponent;
+    constructor(appRoot: HTMLElement) {
+        this.page = new PageComponent();
+        this.page.attachTo(appRoot);
     }
 }
 
-new App();
-// new App(document.querySelector('.App'));
+new App(document.querySelector('.document')! as HTMLElement);

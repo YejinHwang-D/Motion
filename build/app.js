@@ -1,8 +1,8 @@
-import { Header } from './component/header.js';
+import { PageComponent } from './component/Page.js';
 class App {
-    constructor() {
-        console.log('App!');
-        new Header();
+    constructor(appRoot) {
+        this.page = new PageComponent();
+        this.page.attachTo(appRoot);
     }
 }
-new App();
+new App(document.querySelector('.document'));
