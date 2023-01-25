@@ -16,3 +16,80 @@
   --black: #000000;
   --translucent-black: #00000099;
 }
+
+body {
+  background: url('../design/background_1d7e7d9e57.png') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.App {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header 부분 */
+.header {
+  background-color: var(--bg-main-color);
+  border-bottom: 1px solid var(--bg-accent-color);
+  text-align: center;
+}
+
+.header_title {
+  margin: 20px;
+  color: var(--accent-color);
+}
+
+/* header 버튼 부분 */
+.control-pannel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.create-button {
+  margin: 0.1em 0.2em;
+  text-align: center;
+  user-select: none;
+  padding: 1em 3em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: white;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.document {
+  height: 100%;
+  background-color: var(--document-bg-color);
+
+  /* Firefox */
+  scrollbar-width: 6px;
+  scrollbar-color: var(--bg-accent-color);
+  scrollbar-face-color: var(--accent-color);
+}
+
+.document::-webkit-scrollbar {
+  background-color: var(--bg-accent-color);
+  width: 6px;
+}
+
+.document::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+}
+
+.footer {
+  background-color: var(--bg-main-color);
+  color: white;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
