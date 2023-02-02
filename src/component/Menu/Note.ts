@@ -5,7 +5,7 @@ export class NoteComponent extends BaseComponent<HTMLElement> {
         super(`
         <section class="note">
         <div class="note_holder">
-            <p class="note_title"></p>
+            <h2 class="note_title"></h2>
             <p class="note_body"></p>
         </div>
         </section>
